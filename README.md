@@ -16,5 +16,8 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
    5. Seeed LoRa Wio-E5 [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware)
    6. Another device: the above four devices were included in the research of this series. If you are evaluating a different device, you will need to follow the process outlined in Article #2 
 2. Receive transmissions using GnuRadio
-   1. Setup and install Gnuradio and GnuRadio Companion
+   1. Setup [Gnuradio and GnuRadio Companion](https://www.gnuradio.org/)
+   2. Download the [.GRC script](https://github.com/GallagherTom/screaming_satellites/blob/main/spectrum_analysis/spectrum_analzer.grc) developed for this experiment
+      + If needed, alter the file to meet your requirements. For instance, the script includes acceptable ranges for frequency and signal gain. These may need to be adjusted to meet the requirements for your specific requirements
+   
   
