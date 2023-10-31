@@ -6,7 +6,7 @@ This repository provides source code and artifacts to support the three article 
 2. [_Identifying System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_ (Article #2)](https://www.ijatl.org/)
 3. [_Measuring System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_ (Article #3)](https://www.ijatl.org/)
 
-## Reproducing Experiments from _Identifying System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_
+## Reproducing Experiments from Article #2
 Article #2 provided a process for identifying potential leaks in SoC transceivers. The process was demonstrated using four real-world devices. The source code and binaries used in those demonstrations is available here and the steps below outline the process. 
 
 1. Load firmware on the device
@@ -19,5 +19,7 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
    1. Setup [Gnuradio and GnuRadio Companion](https://www.gnuradio.org/)
    2. Download the [.GRC script](https://github.com/GallagherTom/screaming_satellites/blob/main/spectrum_analysis/spectrum_analzer.grc) developed for this experiment
       + If needed, alter the file to meet your requirements. For instance, the script includes acceptable ranges for frequency and signal gain. These may need to be adjusted to meet the requirements for your specific requirements
-   
+
+## Reproducing Experiments from Article #3
+Coming soon!
   
