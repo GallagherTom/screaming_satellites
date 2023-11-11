@@ -31,3 +31,8 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
 ## Reproducing Experiments from Article #3
 Coming soon!
   
+
+## Resources
++ [Original Screaming Channels Research](https://eurecom-s3.github.io/screaming_channels/) - Giovanni Camurati, Sebastian Poeplau, Marius Muench, Thomas Hayes, and Aurélien Francillon. 
++ [Computing Signal-to-Noise Ratio for Side Channel Attacks](https://ileanabuhan.github.io/general/2021/05/07/SNR-tutorial.html) - Ileana Buhan
++ [Software Defined Radio with HackRF](https://greatscottgadgets.com/sdr/) - Michael Ossmann
