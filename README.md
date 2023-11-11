@@ -2,9 +2,9 @@
 _An expansion of the research done in [Screaming Channels](https://eurecom-s3.github.io/screaming_channels/) with a focus on small satellites_
 
 This repository provides source code and artifacts to support the three article series exploring the potential data leaks across broadcasts of System-on-a-Chip transceivers used by (or potentially used by) small satellites. The articles in this series build on each other to ultimately provide a framework and process for identifying and measuring _Screaming Channels_ data leaks. The articles in this series are:
-1. (Article #1) [_Understanding How System-on-a-Chip Data can Leak over Radio Transmissions_](https://www.ijatl.org/)
-2. (Article #2) [_Identifying System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_](https://www.ijatl.org/)
-3. (Article #3) [_Measuring System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_](https://www.ijatl.org/)
+1. (Article #1) [_Understanding How System-on-a-Chip Data can Leak over Radio Transmissions_](https://www.ijatl.org/) _pending publication_
+2. (Article #2) [_Identifying System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_](https://www.ijatl.org/) _submitted for publication_
+3. (Article #3) [_Measuring System-on-a-Chip Data Leaks over Radio Transmissions of Small Satellites_](https://www.ijatl.org/) _not yet published_
 
 ## Reproducing Experiments from Article #2
 Article #2 provided a process for identifying potential leaks in SoC transceivers. The process was demonstrated using four real-world devices. The source code and binaries used in those demonstrations is available here and the steps below outline the process. 
