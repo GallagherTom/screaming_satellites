@@ -19,7 +19,7 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
    7. **Other devices** the above four devices were included in the research of this series. If you are evaluating a different device, you will need to follow the process outlined in Article #2 
 2. Listen for Transmissions
    1. Setup [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/)
-   2. Download the [.GRC script](https://github.com/GallagherTom/screaming_satellites/blob/main/spectrum_analysis/spectrum_analzer.grc) developed for this experiment
+   2. Download the [.GRC script](https://github.com/GallagherTom/screaming_satellites/tree/main/frequency-time-analysis) developed for this experiment
       + If needed, alter the file to meet your requirements. For instance, the script includes acceptable ranges for frequency and signal gain. These may need to be adjusted to meet the requirements for your specific requirements
 3. Exercise the Firmware
    + The CC1111 and Wio-E5 firmware automatically begins iterating through patterns of sleeping and processing
