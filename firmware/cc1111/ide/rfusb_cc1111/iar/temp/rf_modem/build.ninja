@@ -1,0 +1,59 @@
+#Generating source browse information for project rf_modem
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build mrfi_link.pbi : index mrfi_link.xcl
+build rf_modem.pbi : index rf_modem.xcl
+build hal_lcd_dummy.pbi : index hal_lcd_dummy.xcl
+build hal_uart_usb.pbi : index hal_uart_usb.xcl
+build adc.pbi : index adc.xcl
+build hal_int.pbi : index hal_int.xcl
+build clock.pbi : index clock.xcl
+build hal_mcu.pbi : index hal_mcu.xcl
+build hal_timer_32k.pbi : index hal_timer_32k.xcl
+build hal_assert.pbi : index hal_assert.xcl
+build hal_board.pbi : index hal_board.xcl
+build hal_button.pbi : index hal_button.xcl
+build hal_led.pbi : index hal_led.xcl
+build bsp.pbi : index bsp.xcl
+build mrfi.pbi : index mrfi.xcl
+build aes.pbi : index aes.xcl
+build usb_cdc_hooks.pbi : index usb_cdc_hooks.xcl
+build usb_firmware_library_config.pbi : index usb_firmware_library_config.xcl
+build usb_uart.pbi : index usb_uart.xcl
+build usb_interrupt.pbi : index usb_interrupt.xcl
+build usb_suspend.pbi : index usb_suspend.xcl
+build usb_descriptor_parser.pbi : index usb_descriptor_parser.xcl
+build usb_framework.pbi : index usb_framework.xcl
+build usb_standard_requests.pbi : index usb_standard_requests.xcl
+build util_buffer.pbi : index util_buffer.xcl
+build util_lcd.pbi : index util_lcd.xcl
+build util_uart.pbi : index util_uart.xcl
+build rf_modem_part0.pbi : link mrfi_link.pbi rf_modem.pbi hal_lcd_dummy.pbi hal_uart_usb.pbi adc.pbi
+build rf_modem_part1.pbi : link hal_int.pbi clock.pbi hal_mcu.pbi hal_timer_32k.pbi hal_assert.pbi
+build rf_modem_part2.pbi : link hal_board.pbi hal_button.pbi hal_led.pbi bsp.pbi mrfi.pbi
+build rf_modem_part3.pbi : link aes.pbi usb_cdc_hooks.pbi usb_firmware_library_config.pbi usb_uart.pbi usb_interrupt.pbi
+build rf_modem_part4.pbi : link usb_suspend.pbi usb_descriptor_parser.pbi usb_framework.pbi usb_standard_requests.pbi util_buffer.pbi
+build rf_modem_part5.pbi : link util_lcd.pbi util_uart.pbi
+build rf_modem.pbd : link rf_modem_part0.pbi rf_modem_part1.pbi rf_modem_part2.pbi rf_modem_part3.pbi rf_modem_part4.pbi rf_modem_part5.pbi
+build rf_modem.pbw : browsedata rf_modem.pbd
+
+

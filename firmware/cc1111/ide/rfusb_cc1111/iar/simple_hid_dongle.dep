@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2015947981</fileChecksum>
+    <configuration>
+        <name>rfusb_cc1111</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\rxtest.c</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\aes.r51</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\rf.c</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\ioCCxx10_bitdef.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\rf.h</file>
+            <file>$TOOLKIT_DIR$\inc\clib\stddef.h</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\aes.c</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\aes.h</file>
+            <file>$PROJ_DIR$\simple_hid_dongle.hex</file>
+            <file>$PROJ_DIR$\lnk51ew_cc1111.xcl</file>
+            <file>$TOOLKIT_DIR$\lib\clib\cl-pli-nlxd-1e16x01.r51</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\clock.r51</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle.map</file>
+            <file>$PROJ_DIR$\simple_hid_dongle.d51</file>
+            <file>$TOOLKIT_DIR$\inc\clib\sysmac.h</file>
+            <file>$TOOLKIT_DIR$\inc\clib\string.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\cc1111.h</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\ioCC1111.h</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\ioCC1110.h</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\radio.r51</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\clock.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\radio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\rxtest.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\radio.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\arch.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\led.h</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\led.r51</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\rxtest.r51</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\debug.r51</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\debug.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\clock.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\led.c</file>
+            <file>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\debug.h</file>
+            <file>$PROJ_DIR$\temp\simple_hid_dongle\rf.r51</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\common\ioCCxx10_bitdef.h</file>
+            <file>$PROJ_DIR$\..\..\..\source\apps\simple_hid\cc1111ext.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\source\apps\simple_hid\aes.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 1 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 15 14 7 5 0 17 18 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 13 12 8</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\simple_hid_dongle.d51</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 12 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 9 1 27 10</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\clock.c</name>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 30 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\..\cc1111-master-modded\cc1111-master\rxtest.c</name>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 3</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+</project>

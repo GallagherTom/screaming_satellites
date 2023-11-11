@@ -1,0 +1,25 @@
+mrfi.pbi: \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi\mrfi.c \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi/mrfi_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp\bsp.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp/boards/rfusb\bsp_board_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp\mcus/bsp_8051_defs.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC1111.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc/ioCC1110.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp/bsp_macros.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi/radios/family2/mrfi_radio.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\string.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\xencoding_limits.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Threads.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ysizet.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi\mrfi.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp\bsp_macros.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi\mrfi_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi/radios/family2/../common/mrfi_f1f2.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi\smartrf/CC1111/smartrf_CC1111.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp/boards/rfusb\bsp_external/mrfi_board_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\simpliciti\mrfi/radios/common/mrfi_f1f2.c

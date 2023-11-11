@@ -1,0 +1,12 @@
+util_buffer.pbi: \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\utils\util_buffer.c \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\utils/util_buffer.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/ccxx11_dongle\hal_board.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC1111.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc/ioCC1110.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\cc8051\hal_cc8051.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/usb/class_cdc\usb_uart.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_int.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_assert.h

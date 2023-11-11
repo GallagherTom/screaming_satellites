@@ -1,0 +1,9 @@
+hal_button.pbi: \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\targets\ccxx11_dongle\hal_button.c \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\targets\ccxx11_dongle/hal_board.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC1111.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc/ioCC1110.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\cc8051\hal_cc8051.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_button.h

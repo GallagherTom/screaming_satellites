@@ -1,0 +1,7 @@
+adc.pbi: \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\common\cc8051\adc.c \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\common\cc8051/adc.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC1111.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc/ioCC1110.h

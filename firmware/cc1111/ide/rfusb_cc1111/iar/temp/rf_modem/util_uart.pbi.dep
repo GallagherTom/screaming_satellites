@@ -1,0 +1,14 @@
+util_uart.pbi: \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\utils\util_uart.c \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_uart.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\components\utils/util_uart.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\string.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\xencoding_limits.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Threads.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ysizet.h
