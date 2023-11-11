@@ -15,7 +15,7 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
    3. **Texas Instruments CC1111** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1111) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1111/binary)
    4. **Texas Instruments CC1310** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1310) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1310/binary) | [script](https://github.com/GallagherTom/screaming_satellites/blob/main/scripts/alternate-sleep-active/cc1310.py)
       + The CC1310 firmware mirrors the firmware used in the 2018 Screaming Channels research and thus requires an additional script to exercise it in accordance with the process described in Article #2
-   6. **Seeed LoRa Wio-E5** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware)
+   6. **Seeed LoRa Wio-E5** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/Wio-E5%20Mini) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/Wio-E5%20Mini/binary)
    7. **Other devices** the above four devices were included in the research of this series. If you are evaluating a different device, you will need to follow the process outlined in Article #2 
 2. Listen for Transmissions
    1. Setup [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/)
