@@ -16,7 +16,7 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
    4. **Texas Instruments CC1310** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1310) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1310/binary) | [script](https://github.com/GallagherTom/screaming_satellites/blob/main/scripts/alternate-sleep-active/cc1310.py) | [dev environment](https://www.ti.com/tool/CCSTUDIO) | [flashing software](https://www.ti.com/tool/CCSTUDIO)
       + The CC1310 firmware mirrors the firmware used in the 2018 Screaming Channels research and thus requires an additional script to exercise it in accordance with the process described in Article #2
    6. **Seeed LoRa Wio-E5** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/Wio-E5%20Mini) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/Wio-E5%20Mini/binary) | [dev environment](https://www.st.com/en/development-tools/stm32cubeide.html) | [flashing software](https://www.st.com/en/development-tools/stm32cubeprog.html)
-   7. **Other devices** the above four devices were included in the research of this series. If you are evaluating a different device, you will need to follow the process outlined in Article #2 
+   7. **Other devices** the above four devices were included in the research of this series. If you are evaluating a different device, you will need to develop firmware for the device following the process outlined in Article #2 
 2. Listen for Transmissions
    1. Setup [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/)
    2. Download the [.GRC script](https://github.com/GallagherTom/screaming_satellites/tree/main/frequency-time-analysis) developed for this experiment
@@ -29,8 +29,30 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
    + Compare the GRC output to the results provided in Article #2
 
 ## Reproducing Experiments from Article #3
-Coming soon!
-  
+1. Load firmware on the device
+   1. **Nordic Semiconductor nRF52832** [source](https://github.com/eurecom-s3/screaming_channels) | [script](https://github.com/GallagherTom/screaming_satellites/blob/main/scripts/alternate-sleep-active/nRF52832.py) 
+   2. **Texas Instruments CC1310** [source](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1310) | [binary](https://github.com/GallagherTom/screaming_satellites/tree/main/firmware/cc1310/binary) | [script](https://github.com/GallagherTom/screaming_satellites/blob/main/scripts/alternate-sleep-active/cc1310.py) | [dev environment](https://www.ti.com/tool/CCSTUDIO) | [flashing software](https://www.ti.com/tool/CCSTUDIO)
+   3. **Other devices** the above two devices were included in the research of this series. If you are evaluating a different device, you will need to develop firmware for the device following the process outlined in Article #3 
+2. Collect traces of cryptographic processes
+   1. Setup [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/)
+   2. Use the collection script developed for this research. Note that this script is a new module developed version of the Screaming Channels scripting ported to Python3
+      + Easiest way to run the script is by building the docker container and then running the Python script to start it with the necessary parameters. 
+      + You will need to adjust parameters in the config.json file for your target device
+3. Trim the traces
+4. Analyze the traces
+
+## Environment
++ Hardware
+   + HackRF One
+   + Ramsey STE2900 RF Enclosure
+   + Target Devices
+      + Nordic Semiconductor nRF52832
+      + Texas Instruments CC1111
+      + Texas Instruments CC1310
+      + Seeed LoRa Wio-E5
++ Software
+   + [Ubuntu Linux](https://ubuntu.com/) 22.04.1
+   + [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/) v3.10.1.1
 
 ## Resources
 + [Original Screaming Channels Research](https://eurecom-s3.github.io/screaming_channels/) - Giovanni Camurati, Sebastian Poeplau, Marius Muench, Thomas Hayes, and Aurélien Francillon. 
