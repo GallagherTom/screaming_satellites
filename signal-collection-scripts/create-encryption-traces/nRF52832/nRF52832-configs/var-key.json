@@ -1,0 +1,30 @@
+{
+    "firmware": {
+        "mode": "tinyaes",
+        "fixed_key": false,
+        "modulate": false 
+    },
+    "collection": {
+        "channel": 0,
+        "use_spike_of_target_freq":-1,
+        "broadcast_on_freq":0,
+        "hackrf_gain": 45,
+        "hackrf_gain_if": 20,
+        "hackrf_gain_bb": 28,
+        "usrp_gain": 0,
+        "target_freq": 2500000028,
+        "sampling_rate": 5e6,
+        "num_points": 50000,
+        "num_traces_per_point": 1,
+        "bandpass_lower": 1.85e6,
+        "bandpass_upper": 1.95e6,
+        "lowpass_freq": 5e3,
+        "drop_start": 0,
+        "drop_end": 0,
+        "trigger_rising": true,
+        "trigger_offset": 100e-6,
+        "signal_length": 300e-6,
+        "template_name": null,
+        "min_correlation": 0.00
+    }
+}
