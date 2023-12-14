@@ -61,6 +61,13 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
 + Software
    + [Ubuntu Linux](https://ubuntu.com/) 22.04.1
    + [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/) v3.10.1.1
+ 
+## Data Sets
++ In order to ease other researchers in getting started with this analysis, the following data sets are available:
+1. **Nordic Semiconductor nRF52832** [Screaming Channels Traces](https://eurecom-s3.github.io/screaming_channels/#Datasets) | [Screaming Satellites Traces](https://1drv.ms/f/s!ApgJB-Z9DfChhJx-Ubur2OUpxNarkA?e=x7f1FL)
+2. **Texas Instruments CC1111** [Screaming Satellites Traces](https://1drv.ms/f/s!ApgJB-Z9DfChhJ0BBhwp_IG-vLfr4w?e=KrSRVr)
+3. **Texas Instruments CC1310** [Screaming Satellites Traces](https://1drv.ms/f/s!ApgJB-Z9DfChhJ0Ff_d-N6hbFM6gxQ?e=hzr6UU)
+4. **Seeed LoRa Wio-E5** [Screaming Satellites Traces](https://1drv.ms/f/s!ApgJB-Z9DfChhJ0IY5kgOZUGwEAacg?e=Tk9RUv)
 
 ## Resources
 + [Original Screaming Channels Research](https://eurecom-s3.github.io/screaming_channels/) - Giovanni Camurati, Sebastian Poeplau, Marius Muench, Thomas Hayes, and Aurélien Francillon. 
