@@ -38,10 +38,16 @@ Article #2 provided a process for identifying potential leaks in SoC transceiver
 2. Collect traces of cryptographic processes
    1. Setup [Gnuradio and GnuRadio Companion (GRC)](https://www.gnuradio.org/)
    2. Use the collection script developed for this research. Note that this script is a new module developed version of the Screaming Channels scripting ported to Python3
-      + Easiest way to run the script is by building the docker container and then running the Python script to start it with the necessary parameters. 
-      + You will need to adjust parameters in the config.json file for your target device
-3. Trim the traces
-4. Analyze the traces
+   + Easiest way to run the script is by building the docker container and then running the Python script to start it with the necessary parameters. 
+   + You will need to adjust parameters in the config.json file for your target device
+3. (Optional) Extract the traces
+   + Depending on how the traces were collected, an additional step may be required to break apart the individual traces or extract the meaningful segment
+      + _Extracting_: To trim excess content from a trace, it can be useful to trigger a detectable amplitude change. If this approach was taken, each trace will need to be processed to extract the meaningul portion. For this research, this task was accomplished using a configurable Jupyter Notebook [extract_between_spikes](https://github.com/GallagherTom/screaming_satellites/blob/main/jupyter-notebooks/utilities/extract_between_spikes.ipynb)
+      + _Splitting_: If traces were collected as a group (all part of the same file) then the file will need to be broken into individual traces for the remainder of the analysis. To accomplish this, we used a configurable Jupyter Notebook [break_apart_traces](https://github.com/GallagherTom/screaming_satellites/blob/main/jupyter-notebooks/utilities/break_apart_traces.ipynb)
+5. Aligning the traces
+   + Aligning the traces is a key step as misalignment will skew results. The phase alignment algorithm the [Signal Alignment module](https://github.com/pearsonkyle/Signal-Alignment) by Kyle Pearson was used in this project. This algorithm is implemented in a configurable Jupyter Notebook [align_and_resize_traces](https://github.com/GallagherTom/screaming_satellites/blob/main/jupyter-notebooks/utilities/align_and_resize_traces.ipynb)
+7. Analyze the traces
+   + The analysis described in Article #3 uses Welch's t-test and signal-to-noise ratios to characterize any potential data leaks based on common leakage models. Refer to the article for an in-depth discussion of the analysis. For repeatability, the analysis is codified into a Jupyter Notebook [data-leak-analysis](https://github.com/GallagherTom/screaming_satellites/blob/main/jupyter-notebooks/data-leak-analysis.ipynb)
 
 ## Environment
 + Hardware
