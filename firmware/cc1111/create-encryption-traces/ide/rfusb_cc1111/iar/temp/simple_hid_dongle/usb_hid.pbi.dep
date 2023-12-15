@@ -1,0 +1,26 @@
+usb_hid.pbi: \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid\usb_hid.c \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/apps/simple_hid\simple_hid.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_int.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_mcu.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid/usb_firmware_library_headers.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/ccxx11_dongle\hal_board.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC1111.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc/ioCC1110.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\cc8051\hal_cc8051.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid/usb_firmware_library_config.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_descriptor.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library/usb_framework_structs.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid\usb_firmware_library_config.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_descriptor_parser.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library/usb_descriptor.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_interrupt.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_framework.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_reg.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_standard_requests.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/usb/library\usb_suspend.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid\usb_firmware_library_headers.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid/usb_hid_reports.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\usb\class_hid/usb_class_requests.h

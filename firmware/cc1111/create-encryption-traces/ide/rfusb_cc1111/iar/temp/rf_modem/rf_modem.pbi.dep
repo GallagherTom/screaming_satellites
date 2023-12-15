@@ -1,0 +1,35 @@
+rf_modem.pbi: \
+  C:\Users\tomca\Desktop\working\ IAR\source\apps\rf_modem\rf_modem.c \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\apps\rf_modem/../common/mrfi_link.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/mrfi\mrfi.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp\bsp.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp/boards/rfusb\bsp_board_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp\mcus/bsp_8051_defs.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC1111.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc/ioCC1110.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/bsp/bsp_macros.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/SimpliciTI/mrfi/mrfi_defs.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/ccxx11_dongle\hal_board.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/common\cc8051\hal_cc8051.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/usb/class_cdc\usb_uart.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_mcu.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_uart.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_lcd.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_led.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_timer_32k.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_assert.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/utils\util_lcd.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar/../../../source/Components/utils/util.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\stdio.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\xencoding_limits.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\DLib_Threads.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ysizet.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\dlib\c\ystdio.h \
+  C:\Users\tomca\Desktop\working\ IAR\source\apps\rf_modem/../common/ioCCxx10_bitdef.h \
+  C:\Users\tomca\Desktop\working\ IAR\ide\rfusb_cc1111\iar\..\..\..\source\components\tiny-aes-c\aes.h

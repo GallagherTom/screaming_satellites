@@ -1,0 +1,185 @@
+////////////////////////////////////////////////////////////////////////////////
+//    lnk51ew_CC1111F32.xcl: linker command file for IAR Embedded Workbench IDE
+//    Generated: Mon May 24 00:00:01 +0200 2010
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Segment limits
+//  ==============
+//
+//    IDATA
+//    -----
+-D_IDATA0_START=0x00
+-D_IDATA0_END=0xFF
+//
+//    PDATA
+//    -----
+// The first 256 bytes of (I)XDATA memory can be used as PDATA (see also "PDATA page setup" below)
+-D_PDATA0_START=0xF000
+-D_PDATA0_END=0xF0FF
+//
+//
+//    IXDATA
+//    ------
+-D_IXDATA0_START=0x00F000
+-D_IXDATA0_END=0x00FDA1       // CC1111F32 has 4 kB RAM
+//
+// NOTE: 0xFF00-0xFFFF (256 bytes) is mapped to IDATA.
+// NOTE: For CC1111F32 only, the range 0xFDA2-0xFEFF (350 bytes RAM) is used for
+//       register saving and does not retain contents in power mode 2 and 3.
+//       See the section "Texas Instruments device specific" below for more details.
+//
+//
+//    XDATA
+//    -----
+-D_XDATA0_START=0x00F000
+-D_XDATA0_END=0x00FDA1
+//
+//    CODE
+//    ----
+-D_CODE0_START=0x000000
+-D_CODE0_END=0x007FFF         // CC1111F32 has 32 kB code (flash)
+//
+//  Special SFRs
+//  ============
+//
+//    Register bank setup
+//    -------------------
+-D?REGISTER_BANK=0x0          // Sets default register bank (0,1,2,3)
+-D_REGISTER_BANK_START=0x0    // Start address for default register bank (0x0, 0x8, 0x10, 0x18)
+//
+//    Virtual register setup
+//    ----------------------
+-D_BREG_START=0x00
+-D?VB=0x20
+//
+//  Device specific symbol definitions
+//  ==================================
+-D?B=F0                       // B register location
+-D?IE=A8                      // Interrupt Enable register location
+-D?IP=A9                      // Interrupt Priority register location
+
+// The following line must be included for command line builds
+//-D?ESP=0x9B                   //Extended stack pointer register location
+////////////////////////////////////////////////////////////////////////////////
+//
+//  IDATA memory
+//  ============
+-Z(BIT)BREG=_BREG_START
+-Z(BIT)BIT_N=0-7F
+-Z(DATA)REGISTERS+8=_REGISTER_BANK_START
+-Z(DATA)BDATA_Z,BDATA_N,BDATA_I=20-2F
+-Z(DATA)VREG=08-7F
+-Z(DATA)PSP,XSP=08-7F
+-Z(DATA)DOVERLAY=08-7F
+-Z(DATA)DATA_I,DATA_Z,DATA_N=08-7F
+-U(IDATA)0-7F=(DATA)0-7F
+-Z(IDATA)IDATA_I,IDATA_Z,IDATA_N=08-_IDATA0_END
+-Z(IDATA)ISTACK+_IDATA_STACK_SIZE#08-_IDATA0_END
+-Z(IDATA)IOVERLAY=08-FF
+//
+//  ROM memory
+//  ==========
+//
+//    Top of memory
+//    -------------
+-Z(CODE)INTVEC=0
+-Z(CODE)CSTART=_CODE0_START-_CODE0_END
+//
+//    Initializers
+//    ------------
+-Z(CODE)BIT_ID,BDATA_ID,DATA_ID,IDATA_ID,IXDATA_ID,PDATA_ID,XDATA_ID=_CODE0_START-_CODE0_END
+//
+//    Program memory
+//    --------------
+-Z(CODE)RCODE,DIFUNCT,CODE_C,CODE_N,NEAR_CODE=_CODE0_START-_CODE0_END
+//
+//    Checksum
+//    --------
+-Z(CODE)CHECKSUM#_CODE0_END
+//
+//  XDATA memory
+//  ============
+//
+//    PDATA - data memory and stack
+//    -----------------------------
+-Z(XDATA)PDATA_Z,PDATA_I=_PDATA0_START-_PDATA0_END
+-P(XDATA)PDATA_N=_PDATA0_START-_PDATA0_END
+-Z(XDATA)PSTACK+_PDATA_STACK_SIZE=_PDATA0_START-_PDATA0_END
+//
+//    Stacks located in XDATA
+//    -----------------------
+-Z(XDATA)EXT_STACK+_EXTENDED_STACK_SIZE=_EXTENDED_STACK_START
+-Z(XDATA)XSTACK+_XDATA_STACK_SIZE=_XDATA0_START-_XDATA0_END
+//
+//    XDATA - data memory
+//    -------------------
+-Z(XDATA)IXDATA_Z,IXDATA_I=_IXDATA0_START-_IXDATA0_END
+-P(XDATA)IXDATA_N=_IXDATA0_START-_IXDATA0_END
+-Z(XDATA)XDATA_Z,XDATA_I=_XDATA0_START-_XDATA0_END
+-P(XDATA)XDATA_N=_XDATA0_START-_XDATA0_END
+-Z(XDATA)XDATA_HEAP+_XDATA_HEAP_SIZE=_XDATA0_START-_XDATA0_END
+-Z(CONST)XDATA_ROM_C=_XDATA0_START-_XDATA0_END
+//
+//  Core
+//  ====
+-cx51
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//
+// Texas Instruments device specific
+// =================================
+//
+// For CC1111F32, the range 0xFDA2-0xFEFF (350 bytes of RAM) in unified memory
+// space does not retain data when entering power mode 2 or power mode 3
+// (the range is used for storing register values while in PM2/PM3, see
+// CC1111 data sheet section "XDATA Memory Space").
+// This memory range has been excluded from the default (I)XDATA segments to
+// avoid that software developers use it without knowing about its retention
+// properties (to save them from hours of debugging).
+//
+// If the programmer is aware of this and wants to use the specified RAM range,
+// here are two simple suggestions for how to use it:
+//
+//
+// Option 1:
+//
+// If the program NEVER uses PM2 or PM3 one can make a copy of this file,
+// rename it, and edit it by changing the _IXDATA0_END and _XDATA0_END
+// definitions above from 0xFDA1 to 0xFEFF in order to use the entire RAM as
+// normal.
+//
+// Note: To avoid blunders in future projects it is recommended to save the
+// new linker file as a separate .xcl file and select the new file in IAR EW8051
+// via Project->Options->Linker->Config settings.
+//
+//
+// Option 2:
+//
+// If the program DOES use PM2 or PM3 the above solution can cause trouble as
+// one would not clearly know which XDATA variables will be located in the
+// memory range with reduced retention by the linker. To have full control of
+// this, a separate segment can be defined.
+//
+// Special segment declaration of RAM with reduced retention for CC1111F32:
+//
+-Z(XDATA)XDATA_SCRATCH=0xFDA2-0xFEFF
+//
+// With IAR EW8051, one can explicitly put variables into this segment by
+// declaring them with the "@" operator or the "#pragma location" directive.
+// The compiler, however, requires them to be declared "__no_init", e.g.:
+//
+//     __no_init __xdata unsigned char rssi_values[10] @ "XDATA_SCRATCH";
+// or
+//     #pragma location="XDATA_SCRATCH"
+//     __no_init __xdata unsigned short pkt_cnt;
+//
+// Since these variables are declared __no_init one will have to initialize
+// them manually at run-time (not done by the startup code). For more details,
+// please consult the "8051 C/C++ Compiler Reference Guide", section "Placing
+// code and data", that comes with IAR EW8051.
+//
+////////////////////////////////////////////////////////////////////////////////
+

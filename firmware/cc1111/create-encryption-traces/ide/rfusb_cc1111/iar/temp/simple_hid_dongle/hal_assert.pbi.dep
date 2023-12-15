@@ -1,0 +1,7 @@
+hal_assert.pbi: \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\source\components\targets\ccxx11_dongle\hal_assert.c \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_assert.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_defs.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_led.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/common\hal_types.h \
+  C:\Users\tomca\Downloads\swrc088c\ -\ package\ suggested\ for\ cc1111\ide\rfusb_cc1111\iar/../../../source/Components/targets/interface\hal_mcu.h

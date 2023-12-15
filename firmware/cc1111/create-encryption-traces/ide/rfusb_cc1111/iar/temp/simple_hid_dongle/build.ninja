@@ -1,0 +1,55 @@
+#Generating source browse information for project simple_hid_dongle
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build mrfi_link.pbi : index mrfi_link.xcl
+build simple_hid_dongle.pbi : index simple_hid_dongle.xcl
+build adc.pbi : index adc.xcl
+build hal_int.pbi : index hal_int.xcl
+build clock.pbi : index clock.xcl
+build hal_mcu.pbi : index hal_mcu.xcl
+build hal_timer_32k.pbi : index hal_timer_32k.xcl
+build hal_assert.pbi : index hal_assert.xcl
+build hal_board.pbi : index hal_board.xcl
+build hal_button.pbi : index hal_button.xcl
+build hal_led.pbi : index hal_led.xcl
+build bsp.pbi : index bsp.xcl
+build mrfi.pbi : index mrfi.xcl
+build usb_class_requests.pbi : index usb_class_requests.xcl
+build usb_firmware_library_config.pbi : index usb_firmware_library_config.xcl
+build usb_hid.pbi : index usb_hid.xcl
+build usb_hid_hooks.pbi : index usb_hid_hooks.xcl
+build usb_hid_reports.pbi : index usb_hid_reports.xcl
+build usb_interrupt.pbi : index usb_interrupt.xcl
+build usb_suspend.pbi : index usb_suspend.xcl
+build usb_descriptor_parser.pbi : index usb_descriptor_parser.xcl
+build usb_framework.pbi : index usb_framework.xcl
+build usb_standard_requests.pbi : index usb_standard_requests.xcl
+build util_buffer.pbi : index util_buffer.xcl
+build simple_hid_dongle_part0.pbi : link mrfi_link.pbi simple_hid_dongle.pbi adc.pbi hal_int.pbi clock.pbi
+build simple_hid_dongle_part1.pbi : link hal_mcu.pbi hal_timer_32k.pbi hal_assert.pbi hal_board.pbi hal_button.pbi
+build simple_hid_dongle_part2.pbi : link hal_led.pbi bsp.pbi mrfi.pbi usb_class_requests.pbi usb_firmware_library_config.pbi
+build simple_hid_dongle_part3.pbi : link usb_hid.pbi usb_hid_hooks.pbi usb_hid_reports.pbi usb_interrupt.pbi usb_suspend.pbi
+build simple_hid_dongle_part4.pbi : link usb_descriptor_parser.pbi usb_framework.pbi usb_standard_requests.pbi util_buffer.pbi
+build simple_hid_dongle.pbd : link simple_hid_dongle_part0.pbi simple_hid_dongle_part1.pbi simple_hid_dongle_part2.pbi simple_hid_dongle_part3.pbi simple_hid_dongle_part4.pbi
+build simple_hid_dongle.pbw : browsedata simple_hid_dongle.pbd
+
+
